@@ -106,6 +106,11 @@ extension PodcastSearchController: UITableViewDelegate {
 
 extension PodcastSearchController: UISearchBarDelegate {
   func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+    
     searchPodcasts(with: searchText)
+    
+    if searchBar.text == "" {
+        searchPodcasts(with: "swift")
+    }
   }
 }
