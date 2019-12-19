@@ -109,8 +109,8 @@ extension PodcastSearchController: UISearchBarDelegate {
     
     searchPodcasts(with: searchText)
     
-    if searchBar.text == "" {
-        searchPodcasts(with: "swift")
-    }
+//    if searchBar.text == "" {
+//        searchPodcasts(with: "swift")
+//    }
   }
 }
